@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import metodos, metdosdos
+import matplotlibMethods, vpythonMethods
 
 matplotlib  = ["Cubo","Esfera","Flecha simple", "Flecha 3D", "Cono"]
 vpython = ["Cubo", "Esfera", "Flecha", "Cono", "Cilindro", "Piramide"]
@@ -20,40 +20,40 @@ def mainProcess():
         printOptions(vpython)
         answer = int(input('¿Que desea mostrar? -> '))
         if answer == 0:
-            metdosdos.cubo()
+            vpythonMethods.cubo()
             exit()
         elif answer == 1:
-            metdosdos.esfera()
+            vpythonMethods.esfera()
             exit()
         elif answer == 2:
-            metdosdos.flecha()
+            vpythonMethods.flecha()
             exit()
         elif answer == 3:
-            metdosdos.cono()
+            vpythonMethods.cono()
             exit()
         elif answer == 4:
-            metdosdos.cilindo()
+            vpythonMethods.cilindro()
             exit()
         elif answer == 5:
-            metdosdos.piramide()
+            vpythonMethods.piramide()
             exit()
-    else:
+    elif answerOne == 2:
         printOptions(matplotlib)
         answer = int(input('¿Que desea mostrar? -> '))
         if answer == 0:
-            metdosdos.cubo()
+            matplotlibMethods.cubo()
             exit()
         elif answer == 1:
-            metodos.esfera()
+            matplotlibMethods.esfera()
             exit()
         elif answer == 2:
-            metodos.flecha()
+            matplotlibMethods.flecha()
             exit()
         elif answer == 3:
-            metodos.flecha3D()
+            matplotlibMethods.flecha3D()
             exit()
         elif answer == 4:
-            metodos.cono()
+            matplotlibMethods.cono()
             exit()
 
 

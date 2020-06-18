@@ -35,7 +35,7 @@ def esfera():
     ax.set_title('Esfera')
     plt.show()
 
-def cube():
+def cubo():
     r = [-1, 1]
     for s, e in combinations(np.array(list(product(r, r, r))), 2):
         if np.sum(np.abs(s-e)) == r[1]-r[0]:
